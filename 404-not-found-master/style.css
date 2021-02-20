@@ -1,0 +1,152 @@
+/* GLOBALS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --header-font: 'Inconsolata', monospace;
+  --body-font: 'Space Mono', monospace;
+}
+
+main {
+  height: 95vh;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* CONTAINER SECTION */
+
+header {
+  padding: 4rem 4rem 10rem 4rem;
+  margin: auto;
+  font-family: var(--header-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3rem;
+  height: 30vh;
+}
+
+header h2 {
+  width: 13.3rem;
+  height: 2.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  height: 35vh;
+  /* flex-wrap: wrap; */
+}
+
+.scarecrow img {
+  width: 45rem;
+  height: 40.4rem;
+}
+
+.container-text {
+  padding: 2rem;
+  height: 41.4rem;
+}
+
+.container-text h1 {
+  width: 62rem;
+  height: 50%;
+  font-size: 5.4rem;
+  font-family: var(--body-font);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.container-text p {
+  width: 33rem;
+  height: 10.8rem;
+  font-family: var(--body-font);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 15rem;
+  padding: 1.5rem;
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.0001rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--body-font);
+  letter-spacing: 0;
+}
+
+/* MEDIA QUERY  */
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 2rem;
+  }
+
+  /* MAIN SECTION */
+
+  main {
+    height: 85vh;
+  }
+
+  header {
+    height: 10vh;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  /* CONTAINER SECTION */
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container img {
+    width: 80%;
+    height: 100%;
+  }
+
+  .container-text {
+    text-align: left;
+    height: 40%;
+  }
+
+  .container-text h1 {
+    font-size: 3rem;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .container-text p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    margin: 0;
+  }
+
+  /* FOOTER */
+  footer {
+    display: none;
+  }
+}
